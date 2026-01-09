@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EconVista Pro - Live Economic Intelligence Platform</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <div class="nav-left">
+        <div class="logo-section" onclick="scrollToTop()">
+          <div class="logo-icon">📊</div>
+          <div class="logo-text">EconVista Pro</div>
+        </div>
+        <div class="nav-menu">
+          <button class="nav-btn active" onclick="switchTab('overview')">Overview</button>
+          <button class="nav-btn" onclick="switchTab('analysis')">Analysis</button>
+          <button class="nav-btn" onclick="switchTab('data')">Data</button>
+        </div>
+      </div>
+      <div class="nav-right">
+        <div class="status-badge">🟢 Live Data</div>
+        <button class="icon-btn" onclick="refreshData()" title="Refresh">🔄</button>
+        <button class="icon-btn" onclick="toggleTheme()" title="Theme">🌙</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Economic <span class="gradient-text">Intelligence</span> Platform</h1>
+      <p>📊 Real-time economic data with advanced analytics and interactive visualizations</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="container">
+    <section id="overview-tab">
+      <h2 class="section-title">Key Economic Metrics</h2>
+      <p class="section-subtitle">Latest indicators from live data sources</p>
+      <div class="metrics-grid" id="metricsGrid"></div>
+    </section>
+
+    <section id="analysis-tab" class="hidden">
+      <h2 class="section-title">Economic Analysis</h2>
+      <p class="section-subtitle">Interactive visualizations of economic trends</p>
+      <div class="charts-grid" id="chartsGrid"></div>
+    </section>
+
+    <section id="data-tab" class="hidden">
+      <h2 class="section-title">Complete Dataset</h2>
+      <p class="section-subtitle">Economic indicators from 2019-2023</p>
+
+      <div class="table-container">
+        <table id="dataTable">
+          <thead id="tableHead"></thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>About EconVista</h3>
+          <p>Professional economic data analysis platform with real-time analytics and interactive visualizations for comprehensive market intelligence.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Features</h3>
+          <p>✅ Live Data Integration<br>✅ Interactive Charts<br>✅ Dark Mode<br>✅ Responsive Design</p>
+        </div>
+        <div class="footer-section">
+          <h3>Data Coverage</h3>
+          <p>📊 GDP Growth<br>💹 Inflation Rates<br>👥 Employment Data<br>🌍 Trade Indicators</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2024 EconVista Pro. Live Economic Intelligence Platform. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // placeholders so buttons don't error yet
+    function switchTab() {}
+    function refreshData() {}
+    function toggleTheme() {}
+    function scrollToTop() {}
+  </script>
+</body>
+</html>
